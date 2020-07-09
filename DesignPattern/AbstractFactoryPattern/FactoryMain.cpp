@@ -2,18 +2,17 @@
 // Created by xiemenghui on 2018/7/20.
 //
 
+#include "FactoryMain.h"
 #include "Factory.h"
 #include "product.h"
-#include "FactoryMain.h"
 #include <iostream>
 using namespace std;
 
-void FactoryMain()
-{
-    // ±¼³Û
-    Factory * pFactory = Factory::CreateFactory(Factory::FACTORY_TYPE::BENZ_FACTORY);
-    ICar * pCar = pFactory->CreateCar();
-    IBike * pBike = pFactory->CreateBike();
+void FactoryMain() {
+    // å¥”é©°
+    Factory *pFactory = Factory::CreateFactory(Factory::FACTORY_TYPE::BENZ_FACTORY);
+    ICar *pCar = pFactory->CreateCar();
+    IBike *pBike = pFactory->CreateBike();
 
     cout << "Benz factory - Car: " << pCar->Name() << endl;
     cout << "Benz factory - Bike: " << pBike->Name() << endl;
@@ -22,7 +21,7 @@ void FactoryMain()
     SAFE_DELETE(pBike);
     SAFE_DELETE(pFactory);
 
-    // ±¦Âí
+    // å®é©¬
     pFactory = Factory::CreateFactory(Factory::FACTORY_TYPE::BMW_FACTORY);
     pCar = pFactory->CreateCar();
     pBike = pFactory->CreateBike();
@@ -33,7 +32,7 @@ void FactoryMain()
     SAFE_DELETE(pBike);
     SAFE_DELETE(pFactory);
 
-    // °ÂµÏ
+    // å¥¥è¿ª
     pFactory = Factory::CreateFactory(Factory::FACTORY_TYPE::AUDI_FACTORY);
     pCar = pFactory->CreateCar();
     pBike = pFactory->CreateBike();

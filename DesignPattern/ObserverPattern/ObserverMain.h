@@ -5,11 +5,17 @@
 #ifndef DESIGNPATTERN_OBSERVERMAIN_H
 #define DESIGNPATTERN_OBSERVERMAIN_H
 
-#include "concrete_subject.h"
 #include "concrete_observer.h"
+#include "concrete_subject.h"
 
 #ifndef SAFE_DELETE
-#define SAFE_DELETE(p) { if(p){delete(p); (p)=nullptr;} }
+#define SAFE_DELETE(p)     \
+    {                      \
+        if (p) {           \
+            delete (p);    \
+            (p) = nullptr; \
+        }                  \
+    }
 #endif
 
 void ObserverMain();

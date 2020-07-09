@@ -2,14 +2,12 @@
 
 ```cpp
 // 懒汉式单例模式
-class Singleton
-{
+class Singleton {
 private:
 	Singleton() { }
 	static Singleton * pInstance;
 public:
-	static Singleton * GetInstance()
-	{
+	static Singleton * GetInstance() {
 		if (pInstance == nullptr)
 			pInstance = new Singleton();
 		return pInstance;
@@ -25,8 +23,7 @@ private:
 	Singleton(const Singleton &);
 	Singleton & operator = (const Singleton &);
 public:
-	static Singleton & GetInstance()
-	{
+	static Singleton & GetInstance() {
 		static Singleton instance;
 		return instance;
 	}

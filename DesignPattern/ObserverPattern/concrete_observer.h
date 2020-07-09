@@ -9,17 +9,15 @@
 #include <iostream>
 #include <string>
 
-class ConcreteObserver : public IObserver
-{
+class ConcreteObserver : public IObserver {
 public:
     ConcreteObserver(std::string name) { m_strName = name; }
-    void Update(float price)
-    {
+    void Update(float price) {
         std::cout << m_strName << " - price" << price << "\n";
     }
 
 private:
-    std::string m_strName;  // 名字
+    std::string m_strName; // 名字
 };
 
 #endif //DESIGNPATTERN_CONCRETE_OBSERVER_H

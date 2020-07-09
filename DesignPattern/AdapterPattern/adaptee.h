@@ -8,11 +8,9 @@
 #include <iostream>
 
 // 自带的充电器（两脚扁型）
-class OwnCharger
-{
+class OwnCharger {
 public:
-    void ChargeWithFeetFlat()
-    {
+    void ChargeWithFeetFlat() {
         std::cout << "OwnCharger::ChargeWithFeetFlat\n";
     }
 };

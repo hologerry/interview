@@ -2,40 +2,40 @@
 // Created by xiemenghui on 2018/7/20.
 //
 
-#include <iostream>
-#include "SingletonPattern/SingletonMain.h"
 #include "AbstractFactoryPattern/FactoryMain.h"
 #include "AdapterPattern/AdapterMain.h"
 #include "BridgePattern/BridgeMain.h"
 #include "ObserverPattern/ObserverMain.h"
+#include "SingletonPattern/SingletonMain.h"
+#include <iostream>
 
 int main() {
     std::cout << "*******************" << std::endl;
-    std::cout << "** Éè¼ÆÄ£Ê½Àý×Ó **" << std::endl;
+    std::cout << "** è®¾è®¡æ¨¡å¼ä¾‹å­ **" << std::endl;
     std::cout << "*******************" << std::endl;
 
     std::cout << "*******************" << std::endl;
-    std::cout << "** µ¥ÀýÄ£Ê½ **" << std::endl;
+    std::cout << "** å•ä¾‹æ¨¡å¼ **" << std::endl;
     std::cout << "*******************" << std::endl;
     SingletonMain();
 
     std::cout << "*******************" << std::endl;
-    std::cout << "** ³éÏó¹¤³§Ä£Ê½ **" << std::endl;
+    std::cout << "** æŠ½è±¡å·¥åŽ‚æ¨¡å¼ **" << std::endl;
     std::cout << "*******************" << std::endl;
     FactoryMain();
-    
+
     std::cout << "*******************" << std::endl;
-    std::cout << "** ÊÊÅäÆ÷Ä£Ê½ **" << std::endl;
+    std::cout << "** é€‚é…å™¨æ¨¡å¼ **" << std::endl;
     std::cout << "*******************" << std::endl;
     AdapterMain();
 
     std::cout << "*******************" << std::endl;
-    std::cout << "** ÇÅ½ÓÄ£Ê½ **" << std::endl;
+    std::cout << "** æ¡¥æŽ¥æ¨¡å¼ **" << std::endl;
     std::cout << "*******************" << std::endl;
     BridgeMain();
-    
+
     std::cout << "*******************" << std::endl;
-    std::cout << "** ¹Û²ìÕßÄ£Ê½ **" << std::endl;
+    std::cout << "** è§‚å¯Ÿè€…æ¨¡å¼ **" << std::endl;
     std::cout << "*******************" << std::endl;
     ObserverMain();
 

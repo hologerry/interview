@@ -4,14 +4,13 @@
 
 #include "ObserverMain.h"
 
-void ObserverMain()
-{
+void ObserverMain() {
     // 创建主题
-    ConcreteSubject * pSubject = new ConcreteSubject();
+    ConcreteSubject *pSubject = new ConcreteSubject();
 
     // 创建观察者
-    IObserver * pObserver1 = new ConcreteObserver("Jack Ma");
-    IObserver * pObserver2 = new ConcreteObserver("Pony");
+    IObserver *pObserver1 = new ConcreteObserver("Jack Ma");
+    IObserver *pObserver2 = new ConcreteObserver("Pony");
 
     // 注册观察者
     pSubject->Attach(pObserver1);

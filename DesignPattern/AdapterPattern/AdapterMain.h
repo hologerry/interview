@@ -7,12 +7,11 @@
 
 #include "adapter.h"
 
-void AdapterMain()
-{
-    // ´´½¨ÊÊÅäÆ÷
-    IRussiaSocket * pAdapter = new PowerAdapter();
+void AdapterMain() {
+    // åˆ›å»ºé€‚é…å™¨
+    IRussiaSocket *pAdapter = new PowerAdapter();
 
-    // ³äµç
+    // å……ç”µ
     pAdapter->Charge();
 
     SAFE_DELETE(pAdapter);

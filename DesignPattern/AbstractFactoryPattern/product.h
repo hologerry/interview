@@ -9,15 +9,13 @@
 using std::string;
 
 // 汽车接口
-class ICar
-{
+class ICar {
 public:
     virtual string Name() = 0;
 };
 
 // 自行车接口
-class IBike
-{
+class IBike {
 public:
     virtual string Name() = 0;
 };

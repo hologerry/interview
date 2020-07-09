@@ -9,41 +9,36 @@
 #include "concrete_product.h"
 
 // 奔驰工厂
-class BenzFactory : public Factory
-{
+class BenzFactory : public Factory {
 public:
-    ICar* CreateCar()
-    {
+    ICar *CreateCar() {
         return new BenzCar();
     }
-    IBike* CreateBike()
-    {
+    IBike *CreateBike() {
         return new BenzBike();
     }
 };
 
 // 宝马工厂
-class BmwFactory : public Factory
-{
+class BmwFactory : public Factory {
 public:
-    ICar* CreateCar() {
+    ICar *CreateCar() {
         return new BmwCar();
     }
 
-    IBike* CreateBike() {
+    IBike *CreateBike() {
         return new BmwBike();
     }
 };
 
 // 奥迪工厂
-class AudiFactory : public Factory
-{
+class AudiFactory : public Factory {
 public:
-    ICar* CreateCar() {
+    ICar *CreateCar() {
         return new AudiCar();
     }
 
-    IBike* CreateBike() {
+    IBike *CreateBike() {
         return new AudiBike();
     }
 };

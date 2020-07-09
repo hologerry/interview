@@ -6,10 +6,9 @@
 #define DESIGNPATTERN_OBSERVER_H
 
 // 抽象观察者
-class IObserver
-{
+class IObserver {
 public:
-    virtual void Update(float price) = 0;   // 更新价格
+    virtual void Update(float price) = 0; // 更新价格
 };
 
 #endif //DESIGNPATTERN_OBSERVER_H

@@ -4,22 +4,21 @@
 
 #include "BridgeMain.h"
 
-void BridgeMain()
-{
-    // ´´½¨µçÆ÷£¨µçµÆ¡¢µç·çÉÈ£©
-    IElectricalEquipment * light = new Light();
-    IElectricalEquipment * fan = new Fan();
+void BridgeMain() {
+    // åˆ›å»ºç”µå™¨ï¼ˆç”µç¯ã€ç”µé£Žæ‰‡ï¼‰
+    IElectricalEquipment *light = new Light();
+    IElectricalEquipment *fan = new Fan();
 
-    // ´´½¨¿ª¹Ø£¨À­Á´Ê½¿ª¹Ø¡¢Á½Î»¿ª¹Ø£©
-    // ½«À­Á´Ê½¿ª¹ØºÍµçµÆ¹ØÁªÆðÀ´£¬Á½Î»¿ª¹ØºÍ·çÉÈ¹ØÁªÆðÀ´
-    ISwitch * pullChain = new PullChainSwitch(light);
-    ISwitch * twoPosition = new TwoPositionSwitch(fan);
+    // åˆ›å»ºå¼€å…³ï¼ˆæ‹‰é“¾å¼å¼€å…³ã€ä¸¤ä½å¼€å…³ï¼‰
+    // å°†æ‹‰é“¾å¼å¼€å…³å’Œç”µç¯å…³è”èµ·æ¥ï¼Œä¸¤ä½å¼€å…³å’Œé£Žæ‰‡å…³è”èµ·æ¥
+    ISwitch *pullChain = new PullChainSwitch(light);
+    ISwitch *twoPosition = new TwoPositionSwitch(fan);
 
-    // ¿ªµÆ¡¢¹ØµÆ
+    // å¼€ç¯ã€å…³ç¯
     pullChain->On();
     pullChain->Off();
 
-    // ´ò¿ª·çÉÈ¡¢¹Ø±Õ·çÉÈ
+    // æ‰“å¼€é£Žæ‰‡ã€å…³é—­é£Žæ‰‡
     twoPosition->On();
     twoPosition->Off();
 

@@ -8,16 +8,15 @@
 #include "implementor.h"
 
 // 开关
-class ISwitch
-{
+class ISwitch {
 public:
-    ISwitch(IElectricalEquipment *ee){ m_pEe = ee; }
-    virtual ~ISwitch(){}
+    ISwitch(IElectricalEquipment *ee) { m_pEe = ee; }
+    virtual ~ISwitch() {}
     virtual void On() = 0;  // 打开电器
-    virtual void Off() = 0;  // 关闭电器
+    virtual void Off() = 0; // 关闭电器
 
 protected:
-    IElectricalEquipment * m_pEe;
+    IElectricalEquipment *m_pEe;
 };
 
 #endif //DESIGNPATTERN_ABSTRACTION_H

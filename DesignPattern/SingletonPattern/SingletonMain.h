@@ -7,8 +7,7 @@
 
 #include "Singleton.h"
 
-void SingletonMain()
-{
+void SingletonMain() {
     Singleton::GetInstance().DoSomething();
 }
 
